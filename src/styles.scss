@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+:root {
+  --size: 40px;
+  --frames: 62;
+   /* Colores */
+   /* Azules */
+   --blue-cc1: #2a8ac4;
+   --blue-cc2: #1a68ad;
+   --blue-cc3: #1b387f;
+   --blue-cc4: #15315e;
+   /* Rojos */
+   --red-cc1: #a50f36;
+   --red-cc2: #990e2f;
+   --red-cc3: #820f2a;
+   --red-cc4: #680d25;
+
+   /* Backgrounds */
+   --white-cc:#f4f5f8;
+   --dark-cc: #131118;
+}
+
+/* ESTILOS GENERALES */
+body{
+    background-color: var(--white-cc) !important;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(60deg, var(--red-cc1), var(--red-cc4));
+  border-radius: 6px;
+  border: 2px solid rgba(255,255,255,.01);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(60deg, var(--blue-cc1), var(--blue-cc3));
+}
+.dark-cc{
+  background-color: var(--dark-cc) !important;
+}
+/* Degradado Rojo */
+.degradado1 {
+  color: red;
+}
+/* gradient text for modern browsers */
+@supports (background-clip: text) {
+  .degradado1 {
+    background-image: linear-gradient(60deg, var(--red-cc1), var(--red-cc4));
+    background-clip: text;
+    color: transparent;
+  }
+}
+/* Degradado CC Azul */
+.degradado2 {
+  color: blue;
+}
+/* gradient text for modern browsers */
+@supports (background-clip: text) {
+  .degradado2 {
+    background-image: linear-gradient(60deg, var(--blue-cc1), var(--blue-cc3));
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Importando Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.font-thin{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
+.font-light{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.font-regular{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.font-medium{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.font-semibold{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.font-bold{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}

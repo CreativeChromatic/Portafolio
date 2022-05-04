@@ -1,0 +1,202 @@
+.borde{
+    border-radius: 1.5em !important;
+}
+.tamaño{
+  height: 500px;
+}
+
+.fondo-2{
+    background-image: url(../../assets/particulas-fondo-home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (min-width: 1825px) {
+  .fondo-2{
+    height: 82vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .fondo-2{
+    height: 92vh;
+  }
+}
+.card-css{
+    position: relative !important;
+    width: 350px;
+    height: 190px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+ .card-css:hover{
+    height: 400px;
+ }
+ .imgBx{
+     position: absolute;
+     left: 50%;
+     top: -50px;
+     transform: translateX(-50%);
+     width: 150px;
+     height: 150px;
+     background: #fff;
+     border-radius: 20px;
+     box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+     overflow: hidden;
+     transition: 0.5s;
+ }
+.card-css:hover .imgBx{
+    width: 250px;
+    height: 250px;
+}
+
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-css .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card-css .content .details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(92px);
+}
+.card-css:hover .content .details{
+    transform: translateY(0px)
+}
+
+.card-css .content .details h2{
+    font-family: 'Poppins';
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #555;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+}
+.card-css .content .details h2 span{
+    font-family: 'Poppins';
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.card-css .content .details .data-card{
+    display: flex; 
+    justify-content: space-between;
+    margin: 20px 0;
+
+}
+.card-css .content .details .data-card h3{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+.card-css .content .details .data-card h3 span{
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.bg-prueba button{
+  background: var(--blue-cc3) !important;
+}
+.card-css .content .details .actionBtn{
+    display: flex;
+    justify-content: center;
+}
+.card-css .content .details .actionBtn button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: calc(0.8em + 0.1vh);
+    font-weight: 500;
+    background: var(--red-cc1);
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-like {
+  display: none;
+}
+
+.like {
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  border-radius: 999px;
+  overflow: visible;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hearth {
+  background-image: url('../../assets/Hashflag-AppleEvent.svg');
+  background-size: calc(var(--size) * var(--frames)) var(--size);
+  background-repeat: no-repeat;
+  background-position-x: calc(var(--size) * (var(--frames) * -1 + 2));
+  background-position-y: calc(var(--size) * 0.02);
+  width: var(--size);
+  height: var(--size);
+}
+
+.input-like:checked + .hearth {
+  animation: like 1s steps(calc(var(--frames) - 3));  
+  animation-fill-mode: forwards;
+}
+
+@keyframes like {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: calc(var(--size) * (var(--frames) * -1 + 3));
+  }
+}
+
+@media (hover: hover) {
+  .like:hover {
+    background-color: #E1255E15;
+    .hearth {
+      background-position-x: calc(var(--size) * (var(--frames) * -1 + 1));
+    }
+  }
+}
+
+.btn-cc{
+  background-color: var(--red-cc1);
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.btn-cc i{
+ opacity: 0%;
+ margin: -20%;
+ transition: 0.5s;
+}
+.btn-cc:hover{
+  background-color: var(--blue-cc3);
+  transition: 1s;
+  border-radius: 13px;
+}
+.btn-cc:hover i{
+  opacity: 100%;
+  margin: 0%;
+  transition: 1s;
+ }

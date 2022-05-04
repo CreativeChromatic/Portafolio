@@ -1,0 +1,24 @@
+.temporal{
+    display: flex;
+    width: 100vw !important;
+    height: 100vh !important;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, #000, rgb(15, 16, 24));
+    text-align: center;
+    color: #fff;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.cositas{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
