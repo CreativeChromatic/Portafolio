@@ -1,5 +1,5 @@
 # Portafolio de Creative Chromatic
-## Codigo abierto temporalmente
+## Todos los derechos reservados
 
 # Portafolio
 
