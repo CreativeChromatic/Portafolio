@@ -1,4 +1,4 @@
-# Portafolio de Creativa Chromatic
+# Portafolio de Creative Chromatic
 ## Codigo abierto temporalmente
 
 # Portafolio
