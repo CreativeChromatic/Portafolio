@@ -1,10 +1,10 @@
-<ngb-carousel class="pt-5 p-lg-0 d-none d-md-flex">
+<ngb-carousel [interval]=10000 class="pt-5 p-lg-0 d-none d-md-flex">
   <ng-template ngbSlide>
     <img src="./assets/carrousel/carrousel 1.png" class="d-block w-100">
     <div class="carousel-caption d-md-block">
       <h4 class="titulocc">Creative Chromatic</h4>
       <h1 class="agencia"><span class="degradado1">AGENCIA</span> DIGITAL <span class="degradado2">/</span></h1>
-      <p class="ptitulo">Especialistas en Branding y web developer. <br> Llevamos tus ideas al espacio.</p>
+      <p class="ptitulo">Especialistas en Branding y Web Developer. <br> Llevamos tus ideas al espacio.</p>
     </div>
   </ng-template>
   <ng-template ngbSlide>
@@ -17,7 +17,8 @@
   <ng-template ngbSlide>
     <img src="./assets/carrousel/carousel 3.png" class="d-block w-100">
     <div class="carousel-caption d-md-block caption3">
-      <h1 class="agencia3"> SOMOS LA <span class="degradado2">AGENCIA</span> QUE <span class="degradado1">NECESITAS</span></h1>
+      <h1 class="agencia3"> SOMOS LA <span class="degradado2">AGENCIA</span> QUE <span
+          class="degradado1">NECESITAS</span></h1>
     </div>
   </ng-template>
 </ngb-carousel>
@@ -25,7 +26,6 @@
 <app-ventanas></app-ventanas>
 
 <div class="container-fluid dark-cc">
-
   <div class="d-flex justify-content-center align-items-center">
     <div class="pt-5 pb-4">
       <h1 class="text-white text-center font-bold m-0 text-t1">EL <span class="degradado2">CIELO</span> ES EL <span
@@ -52,71 +52,82 @@
       </p>
 
       <p class="font-regular text-center text-md-start">
-        ¿Estás listo para <span class="degradado2 font-bold">impulsar</span> tu <span class="degradado1 font-bold">marca</span>?
+        ¿Estás listo para <span class="degradado2 font-bold">impulsar</span> tu <span
+          class="degradado1 font-bold">marca</span>?
       </p>
 
     </div>
 
-    <div class="col-md-6 col-12 d-flex pt-3 pt-md-0 justify-content-center">
+    <div class="col-md-6 col-12 d-flex pt-3 pt-md-0 pb-5 justify-content-center">
       <img src="./assets/Ovni CC.png" class="img-fluid mx-auto img-animation">
       <img src="./assets/Rocas.png" class="img-fluid mx-auto rocas">
     </div>
   </div>
 </div>
+<div class="wave2">
+  <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+    </defs>
+    <g class="parallax1">
+      <use xlink:href="#gentle-wave" x="50" y="3" fill="#131118" />
+    </g>
+    <g class="parallax2">
+      <use xlink:href="#gentle-wave" x="50" y="0" fill="#131118" />
+    </g>
+    <g class="parallax3">
+      <use xlink:href="#gentle-wave" x="50" y="9" fill="#131118" />
+    </g>
+    <g class="parallax4">
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="#f4f5f8" />
+    </g>
+  </svg>
+</div>
 
 <!-- Servicios -->
-<div class="container-fluid fondow">
-    <div class="py-5">
-      <h1 class="text-dark text-center font-bold m-0 text-t2">
-        ¿Cuáles son <span class="degradado2">nuestros </span><span class="degradado1">servicios</span>?
-      </h1>
+<div class="container-fluid">
+  <div class="pt-5">
+    <h1 class="text-dark text-center font-bold pt-5 display-2">
+      <span class="degradado2">NUESTROS </span><span class="degradado1">SERVICIOS</span>
+    </h1>
+  </div>
+<div class="container mb-5">
+  <div class="text-center">
+  </div>
+  <div class="row prueba">
+    <div class="col-md-4">
+      <div class="box">
+        <div class="our-services settings">
+          <div class="icon"> <img src="https://i.imgur.com/6NKPrhO.png"> </div>
+          <h4>Branding</h4>
+          <p>Diseño de logo <br> identidad corporativa</p>
+        </div>
+      </div>
     </div>
-    <!-- Tabs -->
-    <div class="d-flex justify-content-center align-items-center">
-      <!-- Nav pills -->
-      <div>
-      <ul class="nav nav-pills" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link pill1 active" data-bs-toggle="pill" data-bs-target="#brand" aria-expanded="true"
-              aria-controls="brand"><i class="fa-solid fa-pen-nib me-2"></i>BRANDING</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pill2" data-bs-toggle="pill" data-bs-target="#web" aria-expanded="true"
-              aria-controls="web"><i class="fa-solid fa-code me-2"></i>WEB DEV</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pill3" data-bs-toggle="pill" data-bs-target="#social" aria-expanded="true"
-              aria-controls="social"><i class="fa-solid fa-share-nodes me-2"></i>SOCIAL MEDIA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pill4" data-bs-toggle="pill" data-bs-target="#marketing" aria-expanded="true"
-              aria-controls="marketing"><i class="fa-solid fa-bullhorn me-2"></i>MARKETING</a>
-          </li>
-      </ul>
-      <!-- Tab panes -->
-      <div class="tab-content">
-          <div id="brand" class="container tab-pane active">
-            <b class="text-muted">Marca / Logo / Identidad corporativa</b> <br>
-            <br>Una de nuestras fortalezas como agencia es el diseño de marca (Identidad corporativa),
-            nos enfocados en el minimalismo y el impacto visual para el buen posicionamiento de su marca.<br>
-            <br><b class="text-muted">Logos muestra IMG</b>
-          </div>
-          <div id="web" class="container tab-pane fade">
-            <p class="text-muted"><b>Desarrollo y Diseño Web </b>(Apps y páginas)</p>
-            Llevamos acabo proyectos web con las tecnologias y lenguajes más demandados del mercado:
-            Angular, React, MySQL, Laravel, php, Bootstrap.
-            <br><b class="text-muted">Logos tecnologias</b>
-          </div>
-          <div id="social" class="container tab-pane fade">
-            <b class="text-muted">Diseño y Gestión</b> <br>
-            <br><p>Las redes sociales son el medio de publicidad y difusión más poderoso que hay actualmente y es casi 
-              un requisito que las empresas y marcas se posicionen atraves de ellas, por esto, contamos planes de gestión y diseño para las mismas.
-            </p>
-          </div>
-          <div id="marketing" class="container tab-pane fade">
-            ¡Estamos construyendo algo increible en esta sección, Vuelve pronto!
-          </div>
+    <div class="col-md-4">
+      <div class="box">
+        <div class="our-services speedup">
+          <div class="icon"> <img src="https://i.imgur.com/KMbnpFF.png"> </div>
+          <h4>Web Developer</h4>
+          <p>Desarrollo y Diseño Web <br> (Apps y páginas)</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="box">
+        <div class="our-services privacy">
+          <div class="icon"> <img src="https://i.imgur.com/AgyneKA.png"> </div>
+          <h4>Social Media</h4>
+          <p>Diseño y Gestión</p>
+        </div>
       </div>
     </div>
   </div>
-  </div>
+</div>
+</div>

@@ -60,7 +60,7 @@ body{
 /* gradient text for modern browsers */
 @supports (background-clip: text) {
   .degradado1 {
-    background-image: linear-gradient(60deg, var(--red-cc1), var(--red-cc4));
+    background-image: linear-gradient(60deg, var(--red-cc1), var(--red-cc3));
     background-clip: text;
     color: transparent;
   }
