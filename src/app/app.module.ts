@@ -14,6 +14,7 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { Error404Component } from './error404/error404.component';
 import { VentanasComponent } from './ventanas/ventanas.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { VentanasComponent } from './ventanas/ventanas.component';
     ProyectosComponent,
     ContactoComponent,
     Error404Component,
-    VentanasComponent
+    VentanasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

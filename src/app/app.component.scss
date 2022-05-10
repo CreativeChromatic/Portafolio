@@ -1,32 +1,34 @@
-/* common */
-.loading {
-    font-size: 25px;
-    font-family: 'Poppins';
-    font-weight: 700;
-    text-align: center;
-    color: #fff;
-    span {
-      display: inline-block;
-      margin: 0.01em;
-    }
+.progress {
+  background: #131118;
+  justify-content: flex-start;
+  border-radius: 5px;
+  align-items: center;
+  position: relative;
+  padding: 1px;
+  display: flex;
+  height: 18px;
+  border: 2px solid var(--red-cc1);
+  width: 500px;
+}
+@media only screen and (max-width: 550px) {
+  .progress{
+    width: 400px;
   }
-  
-  /* code #1 */
-  .loading01 {
-    span {
-      animation: loading01 2.4s infinite alternate;
-      @for $i from 0 through 10 {
-        &:nth-child(#{$i+1}) {
-          animation-delay: #{$i*.1}s;
-        }
-      }
-    }
-  }
-  @keyframes loading01 {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+}
+
+.progress-value {
+  animation: load 9000ms normal forwards;
+  border-radius: 2px;
+  background: linear-gradient(60deg, var(--red-cc1), var(--red-cc4));
+  height: 10px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+.powered{
+  position: absolute;
+  margin-top: 55%;
+}

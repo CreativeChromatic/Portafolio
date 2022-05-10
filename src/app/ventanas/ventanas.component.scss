@@ -11,16 +11,7 @@
     background-position: center;
     background-size: cover;
 }
-@media only screen and (min-width: 1825px) {
-  .fondo-2{
-    height: 82vh;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .fondo-2{
-    height: 92vh;
-  }
-}
+
 .card-css{
     position: relative !important;
     width: 350px;

@@ -1,47 +1,122 @@
 <ngb-carousel class="pt-5 p-lg-0 d-none d-md-flex">
   <ng-template ngbSlide>
-      <img src="./assets/carrousel/carrousel 1.png" class="d-block w-100">
+    <img src="./assets/carrousel/carrousel 1.png" class="d-block w-100">
     <div class="carousel-caption d-md-block">
       <h4 class="titulocc">Creative Chromatic</h4>
       <h1 class="agencia"><span class="degradado1">AGENCIA</span> DIGITAL <span class="degradado2">/</span></h1>
-          <p class="ptitulo">Especialistas en Branding y web developer. <br> Llevamos tus ideas al espacio.</p>
+      <p class="ptitulo">Especialistas en Branding y web developer. <br> Llevamos tus ideas al espacio.</p>
     </div>
   </ng-template>
   <ng-template ngbSlide>
-      <img src="./assets/carrousel/carousel 2.png" class="d-block w-100">
+    <img src="./assets/carrousel/carousel 2.png" class="d-block w-100">
     <div class="carousel-caption d-md-block mx-auto espacio2">
-      <h1 class="agencia2"><span class="degradado1">IDEAS</span> HASTA EL <span class="degradado2">INFINITO</span></h1>
+      <h1 class="agencia2"><span class="degradado2">IDEAS</span> HASTA EL <span class="degradado1">INFINITO</span></h1>
       <p class="ptitulo2">y más allá</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="./assets/carrousel/carousel 3.png" class="d-block w-100">
+    <div class="carousel-caption d-md-block caption3">
+      <h1 class="agencia3"> SOMOS LA <span class="degradado2">AGENCIA</span> QUE <span class="degradado1">NECESITAS</span></h1>
     </div>
   </ng-template>
 </ngb-carousel>
 
 <app-ventanas></app-ventanas>
 
-<div class="container-fluid dark-cc mt-5 fondo-3">
+<div class="container-fluid dark-cc">
+
   <div class="d-flex justify-content-center align-items-center">
-    <div class="py-5">
-      <h1 class="text-white text-center font-bold m-0 text-t1">EL  <span class="degradado2">CIELO</span> ES EL <span class="degradado2">LIMITE</span></h1>
-      <h2 class="text-white text-center font-medium m-0 text-t2">Pero <span class="degradado1 font-bold">NO</span> el <span class="degradado1 font-bold">NUESTRO</span></h2>
+    <div class="pt-5 pb-4">
+      <h1 class="text-white text-center font-bold m-0 text-t1">EL <span class="degradado2">CIELO</span> ES EL <span
+          class="degradado2">LIMITE</span></h1>
+      <h2 class="text-white text-center font-medium m-0 text-t2">Pero <span class="degradado1 font-bold">NO</span> el
+        <span class="degradado1 font-bold">NUESTRO</span>
+      </h2>
     </div>
   </div>
-  <div class="row d-flex justify-content-center align-items-center pt-0 pt-lg-5 mb-5">
-    <div class="col-md-6 col-12 texto-3 pb-4">
+
+  <div class="row d-flex justify-content-center align-items-center">
+
+    <div class="col-md-6 col-12 texto-3">
+
       <p class="font-regular text-center text-md-start">
-        En <span class="degradado2 font-bold">CREATIVE</span><span class="degradado1 font-bold"> CHROMATIC</span>, no tenemos limites <br class="d-none d-xxl-flex">
+        En <span class="degradado2 font-bold">CREATIVE</span><span class="degradado1 font-bold"> CHROMATIC</span>, no
+        tenemos limites <br class="d-none d-xxl-flex">
         para innovar y llevar al siguiente nivel las marcas <br class="d-none d-xxl-flex">
         de nuestros clientes.
       </p>
+
       <p class="font-regular my-5 text-center text-md-start">
-        No somos solo una agencia, somos una solución.
+        No solo somos una agencia, somos una solución.
       </p>
+
       <p class="font-regular text-center text-md-start">
-        ¿Estás listo para llevar tu marca al <i><span class="degradado2 font-bold">next</span><span class="degradado1 font-bold"> level</span></i>?
+        ¿Estás listo para <span class="degradado2 font-bold">impulsar</span> tu <span class="degradado1 font-bold">marca</span>?
       </p>
-    </div>
-    <div class="col-md-6 col-12 d-flex">
-      <img src="../../assets/Home square 1.png" class="img-fluid mx-auto" width="400px">
+
     </div>
 
+    <div class="col-md-6 col-12 d-flex pt-3 pt-md-0 justify-content-center">
+      <img src="../../assets/Ovni CC.png" class="img-fluid mx-auto img-animation">
+      <img src="../../assets/Rocas.png" class="img-fluid mx-auto rocas">
+    </div>
   </div>
 </div>
+
+<!-- Servicios -->
+<div class="container-fluid fondow">
+    <div class="py-5">
+      <h1 class="text-dark text-center font-bold m-0 text-t2">
+        ¿Cuáles son <span class="degradado2">nuestros </span><span class="degradado1">servicios</span>?
+      </h1>
+    </div>
+    <!-- Tabs -->
+    <div class="d-flex justify-content-center align-items-center">
+      <!-- Nav pills -->
+      <div>
+      <ul class="nav nav-pills" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link pill1 active" data-bs-toggle="pill" data-bs-target="#brand" aria-expanded="true"
+              aria-controls="brand"><i class="fa-solid fa-pen-nib me-2"></i>BRANDING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pill2" data-bs-toggle="pill" data-bs-target="#web" aria-expanded="true"
+              aria-controls="web"><i class="fa-solid fa-code me-2"></i>WEB DEV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pill3" data-bs-toggle="pill" data-bs-target="#social" aria-expanded="true"
+              aria-controls="social"><i class="fa-solid fa-share-nodes me-2"></i>SOCIAL MEDIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pill4" data-bs-toggle="pill" data-bs-target="#marketing" aria-expanded="true"
+              aria-controls="marketing"><i class="fa-solid fa-bullhorn me-2"></i>MARKETING</a>
+          </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+          <div id="brand" class="container tab-pane active">
+            <b class="text-muted">Marca / Logo / Identidad corporativa</b> <br>
+            <br>Una de nuestras fortalezas como agencia es el diseño de marca (Identidad corporativa),
+            nos enfocados en el minimalismo y el impacto visual para el buen posicionamiento de su marca.<br>
+            <br><b class="text-muted">Logos muestra IMG</b>
+          </div>
+          <div id="web" class="container tab-pane fade">
+            <p class="text-muted"><b>Desarrollo y Diseño Web </b>(Apps y páginas)</p>
+            Llevamos acabo proyectos web con las tecnologias y lenguajes más demandados del mercado:
+            Angular, React, MySQL, Laravel, php, Bootstrap.
+            <br><b class="text-muted">Logos tecnologias</b>
+          </div>
+          <div id="social" class="container tab-pane fade">
+            <b class="text-muted">Diseño y Gestión</b> <br>
+            <br><p>Las redes sociales son el medio de publicidad y difusión más poderoso que hay actualmente y es casi 
+              un requisito que las empresas y marcas se posicionen atraves de ellas, por esto, contamos planes de gestión y diseño para las mismas.
+            </p>
+          </div>
+          <div id="marketing" class="container tab-pane fade">
+            ¡Estamos construyendo algo increible en esta sección, Vuelve pronto!
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
