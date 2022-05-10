@@ -18,6 +18,6 @@ export class AppComponent {
     setTimeout(() => {
       /** spinner ends after 9 seconds */
       this.spinner.hide();
-    }, 10);
+    }, 9000);
   }
 }
